@@ -32,6 +32,7 @@ public class Run {
 
         Robot robot1 = new Robot(sonyHead, sonyHand, sonyLeg);
 
+        System.out.println(robot1);
 
     }
 }
