@@ -1,6 +1,8 @@
 package by.teachmeskills.robot.hands;
 
-public class SamsungHands implements IHand{
+import by.teachmeskills.robot.service.IHand;
+
+public class SamsungHands implements IHand {
 
     private int price;
 

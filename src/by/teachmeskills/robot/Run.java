@@ -1,13 +1,12 @@
 package by.teachmeskills.robot;
 
-import by.teachmeskills.robot.hands.IHand;
+import by.teachmeskills.robot.service.IHand;
 import by.teachmeskills.robot.hands.SonyHands;
 import by.teachmeskills.robot.hands.ToshibaHands;
-import by.teachmeskills.robot.heads.IHead;
+import by.teachmeskills.robot.service.IHead;
 import by.teachmeskills.robot.heads.SonyHead;
 import by.teachmeskills.robot.heads.ToshibaHead;
-import by.teachmeskills.robot.legs.ILeg;
-import by.teachmeskills.robot.legs.SamsungLegs;
+import by.teachmeskills.robot.service.ILeg;
 import by.teachmeskills.robot.legs.SonyLegs;
 import by.teachmeskills.robot.legs.ToshibaLegs;
 
@@ -32,7 +31,7 @@ public class Run {
 
         Robot robot1 = new Robot(sonyHead, sonyHand, sonyLeg);
 
-        System.out.println(robot1);
+        System.out.println(sonyHand.getPrice() + sonyHead.getPrice() + robot1.getLeg());
 
     }
 }

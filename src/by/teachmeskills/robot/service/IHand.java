@@ -1,4 +1,4 @@
-package by.teachmeskills.robot.hands;
+package by.teachmeskills.robot.service;
 
 public interface IHand {
     void upHand();

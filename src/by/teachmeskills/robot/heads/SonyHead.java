@@ -1,5 +1,7 @@
 package by.teachmeskills.robot.heads;
 
+import by.teachmeskills.robot.service.IHead;
+
 public class SonyHead implements IHead {
     private int price;
 

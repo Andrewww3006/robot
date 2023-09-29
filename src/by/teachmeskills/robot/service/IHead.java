@@ -1,4 +1,4 @@
-package by.teachmeskills.robot.heads;
+package by.teachmeskills.robot.service;
 
 public interface IHead {
     void speek();

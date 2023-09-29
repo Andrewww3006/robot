@@ -1,6 +1,6 @@
 package by.teachmeskills.robot.heads;
 
-import by.teachmeskills.robot.heads.IHead;
+import by.teachmeskills.robot.service.IHead;
 
 public class SamsungHead implements IHead {
 

@@ -1,4 +1,4 @@
-package by.teachmeskills.robot;
+package by.teachmeskills.robot.service;
 
 public interface IRobot {
 

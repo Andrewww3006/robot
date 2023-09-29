@@ -1,6 +1,8 @@
 package by.teachmeskills.robot.legs;
 
-public class SonyLegs implements ILeg{
+import by.teachmeskills.robot.service.ILeg;
+
+public class SonyLegs implements ILeg {
 
     private int price;
 

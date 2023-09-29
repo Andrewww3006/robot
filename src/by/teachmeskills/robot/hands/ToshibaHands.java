@@ -1,6 +1,8 @@
 package by.teachmeskills.robot.hands;
 
-public class ToshibaHands implements IHand{
+import by.teachmeskills.robot.service.IHand;
+
+public class ToshibaHands implements IHand {
     private int price;
 
     public ToshibaHands(int price) {
