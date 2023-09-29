@@ -31,7 +31,7 @@ public class Run {
 
         Robot robot1 = new Robot(sonyHead, sonyHand, sonyLeg);
 
-        System.out.println(sonyHand.getPrice() + sonyHead.getPrice() + robot1.getLeg());
+        System.out.println(robot1.getPrice());
 
     }
 }
