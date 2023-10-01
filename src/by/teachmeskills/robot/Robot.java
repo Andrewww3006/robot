@@ -5,12 +5,16 @@ import by.teachmeskills.robot.service.IHead;
 import by.teachmeskills.robot.service.ILeg;
 import by.teachmeskills.robot.service.IRobot;
 
+import java.util.ArrayList;
+
 public class Robot implements IRobot {
     private IHead head;
     private IHand hand;
     private ILeg leg;
+    private String name;
 
-    public Robot(IHead head, IHand hand, ILeg leg) {
+    public Robot(String name, IHead head, IHand hand, ILeg leg) {
+        this.name = name;
         this.head = head;
         this.hand = hand;
         this.leg = leg;
@@ -44,6 +48,7 @@ public class Robot implements IRobot {
 
     @Override
     public void action() {
+        System.out.println(name + ":");
         head.speek();
         hand.upHand();
         leg.step();
@@ -57,6 +62,19 @@ public class Robot implements IRobot {
     public int getPrice() {
         int price = head.getPrice() + hand.getPrice() + leg.getPrice();
         return price;
+    }
+
+    public void count(ArrayList<Robot> robots)
+    {
+        double maxPrice = robots.get(0).getPrice();
+        int maxIndex = robots.indexOf(robots.get(0));
+        for (Robot x: robots) {
+            if (x.getPrice() >= maxPrice) {
+                maxPrice = x.getPrice();
+                maxIndex = robots.indexOf(x);
+            }
+        }
+        System.out.println(robots.get(maxIndex).name + " самый дорогой, его цена = " + maxPrice + " $");
     }
 
 

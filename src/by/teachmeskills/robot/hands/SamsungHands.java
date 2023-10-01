@@ -16,6 +16,8 @@ public class SamsungHands implements IHand {
     @Override
     public void upHand() {
 
+        System.out.println("Робот поднял руку Samsung");
+
     }
 
     @Override
